@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.ivangretic.quiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="200dp"
+            android:src="@drawable/anime_logo"
+            android:scaleType="centerInside"/>
+        <View style="@style/Divider" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Info"
+            android:fontFamily="sans-serif"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="true"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"/>
+        <View style="@style/Divider" />
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:inputType="textCapWords"
+            android:layout_height="wrap_content"
+            android:hint="Your Name"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Begin"
+            android:onClick="focusOnView"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"/>
+        <View style="@style/Divider" />
+        <TextView
+            android:id="@+id/first_text"
+            style="@style/Question"
+            android:text="@string/question1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/answers_bottom_margin">
+
+            <RadioButton
+                android:id="@+id/ans1_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickedAnswer1_1"
+                android:text="Ban" />
+
+            <RadioButton
+                android:id="@+id/ans1_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickedAnswer1_2"
+                android:text="King" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <RadioButton
+                android:id="@+id/ans1_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickedAnswer1_3"
+                android:text="Meliodas" />
+
+            <RadioButton
+                android:id="@+id/ans1_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickedAnswer1_4"
+                android:text="Merlin" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/answers_bottom_margin">
+
+            <CheckBox
+                android:id="@+id/check2_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gowther" />
+
+            <CheckBox
+                android:id="@+id/check2_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Elizabeth" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/answers_bottom_margin">
+
+            <CheckBox
+                android:id="@+id/check2_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Galand" />
+
+            <CheckBox
+                android:id="@+id/check2_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Escanor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <CheckBox
+                android:id="@+id/check2_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dreyfus" />
+
+            <CheckBox
+                android:id="@+id/check2_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gilthunder" />
+
+        </LinearLayout>
+        <View style="@style/Divider" />
+        <TextView
+            style="@style/Question"
+            android:text="@string/question3.1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/answers_bottom_margin"
+            style=""
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="@string/hint1"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Clan" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question3.2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/answers_bottom_margin"
+                android:textSize="18sp"
+                android:text="@string/question3.3" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/answers_bottom_margin"
+                android:gravity="center_horizontal"
+                android:hint="@string/hint2"
+                android:inputType="textCapWords" />
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question3.4" />
+        <View style="@style/Divider" />
+        <TextView
+            style="@style/Question"
+            android:text="@string/question4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/answers_bottom_margin">
+
+            <RadioButton
+                android:id="@+id/ans4_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickedAnswer4_1"
+                android:text="Sand Crawler" />
+
+            <RadioButton
+                android:id="@+id/ans4_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickedAnswer4_2"
+                android:text="Sinful Soul" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <RadioButton
+                android:id="@+id/ans4_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickedAnswer4_3"
+                android:text="Fresh Chops" />
+
+            <RadioButton
+                android:id="@+id/ans4_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="clickedAnswer4_4"
+                android:text="Boar's Hat" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/question5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/answers_bottom_margin">
+
+            <CheckBox
+                android:id="@+id/check5_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gilthunder" />
+
+            <CheckBox
+                android:id="@+id/check5_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Zaratras" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/answers_bottom_margin">
+
+            <CheckBox
+                android:id="@+id/check5_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Helbram" />
+
+            <CheckBox
+                android:id="@+id/check5_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dreyfus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <CheckBox
+                android:id="@+id/check5_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hendrickson" />
+
+            <CheckBox
+                android:id="@+id/check5_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Howzer" />
+
+        </LinearLayout>
+        <View style="@style/Divider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="100dp"
+                android:text="Submit"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:onClick="showResult"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="100dp"
+                android:text="Reset"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:onClick="resetActivity"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

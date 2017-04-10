@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="info">The quiz consists of five questions of various types. There are negative points for choosing the wrong answers, so choose wisely! Good luck!</string>
+    <string name="question1">The leader (captain) of the Seven Deadly Sins is called...</string>
+    <string name="question2">Check all the members of the Seven Deadly Sins:</string>
+    <string name="question3.1">Britannia was once beset in a Holy War between the Four Races (Human, Giant, Fairy, and Goddess) and the...</string>
+    <string name="question3.2">...causing great destruction and death in the continent until the allied clans claimed victory with the...</string>
+    <string name="question3.4">...sealing away the Demon Realm from Britannia.</string>
+    <string name="question3.3">Coffin of</string>
+    <string name="question4">A bar that is founded, owned and run by Meliodas is called...</string>
+    <string name="question5">Check all the present and former Great Holy Knights:</string>
+    <string name="hint1">Type here</string>
+    <string name="hint2">2 words</string>
+</resources>
